@@ -83,7 +83,12 @@ body h4
 .navbar li
 {
     display: inline-flex;
-    padding-left: 30px;
+    margin-left: 30px;
+}
+
+.navbar li:first-child
+{
+    margin-left: 0;
 }
 
 .navbar a
@@ -363,9 +368,8 @@ body h4
 
 .contactForm textArea
 {
-    min-width: 520px;
-    max-width: 520px;
-    min-height: 150px;
+    width: 520px;
+    height: 150px;
 
     resize: none;
 }
@@ -816,10 +820,6 @@ body h4
     grid-column-end: 1;
     grid-row-start: 1;
     z-index: 1;
-
-/*    border: 1px solid yellow;*/
-
-    margin-bottom: 400px;
 }
 
 .dialogueImgContainer img
@@ -835,6 +835,8 @@ body h4
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
+
+    border: 1px solid yellow;
 }
 
 .dialoguePersonName

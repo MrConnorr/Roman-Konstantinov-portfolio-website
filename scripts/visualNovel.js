@@ -309,6 +309,7 @@ function changeVNPosition()
         document.getElementById("closeVN").style.marginTop = "250px";
         document.getElementById("closeVN").style.marginRight = "500px";
         document.getElementById("scrollIconWrapper").style.marginTop = "1150px";
+        document.getElementById("spriteImgContainer").style.marginBottom = "450px";
     } else
     {
         document.getElementById("dialogueContainer").style.marginTop = "450px";
@@ -316,6 +317,7 @@ function changeVNPosition()
         document.getElementById("closeVN").style.marginTop = "80px";
         document.getElementById("closeVN").style.marginRight = "300px";
         document.getElementById("scrollIconWrapper").style.marginTop = "800px";
+        document.getElementById("spriteImgContainer").style.marginBottom = "400px";
     }
 }
 

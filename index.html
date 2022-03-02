@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roman Konstantinov Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobilestyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6fd708a288.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -26,7 +28,6 @@
 </nav>
 
 <div class="main-container">
-
     <div id="home" class="welcomeWrapper">
     <canvas id="welcomeBG" class="welcomeBG"></canvas>
 
@@ -49,7 +50,7 @@
         </div>
 
         <div id="dialogueWrapper" class="dialogueWrapper">
-            <div class="dialogueImgContainer">
+            <div id="spriteImgContainer" class="dialogueImgContainer">
                 <img id="spriteCont" src="images/sprites/tutorial.png" alt="" />
             </div>
 
@@ -163,7 +164,7 @@
                             </p>
                             <div class="iconsWrapper">
                                 <div class="source mainBtn">
-                                    <a href="https://github.com/MrConnorr" target="_blank">GitHub <span class="iconify" data-icon="codicon:github-alt"></span></a>
+                                    <a href="https://github.com/MrConnorr/Roman-Konstantinov-portfolio-website" target="_blank">GitHub <span class="iconify" data-icon="codicon:github-alt"></span></a>
                                 </div>
                                 <ul class="toolsIcons">
                                     <li>HTML5</li>
@@ -240,7 +241,7 @@
         </div>
     </div>
 
-    <div id="skills" class="experience">
+    <div id="skills" class="skills">
         <div class="container">
             <h2>My Skills set</h2>
             <h3>I am currently working wiith the technologies and platforms listed below</h3>
@@ -268,7 +269,7 @@
             <div class="contactWrapper">
 
                 <div class="formContainer">
-                    <form class="contactForm">
+                    <form name="Contact form" class="contactForm" method="post" data-netlify="true">
                     <label data-end="*" for="name">Your Name</label>
                     <input id="name" type="text" required />
                     <label data-end="*" for="email">Email</label>
@@ -280,7 +281,7 @@
                 </div>
 
                 <div class="contactInfo">
-                    Or contact me by:
+                   Or contact me by:
                     <ul>
                         <li><span class="iconify" data-icon="fluent:mail-20-regular"></span><a href="mailto:dragonden2010@gmail.com">dragonden2010@gmail.com</a></li>
                         <li><span class="iconify" data-icon="carbon:phone"></span><a href="tel:+37258037071">+37258037071</a></li>

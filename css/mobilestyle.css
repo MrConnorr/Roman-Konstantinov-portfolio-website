@@ -1,0 +1,307 @@
+@media only screen and (max-width: 1199px)
+{
+    body img
+    {
+        border-radius: 0;
+    }
+
+    body h2, h3
+    {
+        text-align: center;
+    }
+
+    .welcomeBtns
+    {
+        display: none;
+    }
+
+    .container, .nav-container
+    {
+        max-width: calc(100% - 20px);
+    }
+
+    .navbar
+    {
+        height: auto;
+        text-align: center;
+        position: relative; /*TODO: THINK ABOUT IT!!!*/
+    }
+
+    .nav-container
+    {
+        justify-content: center;
+    }
+
+    .navbar li:nth-child(1)
+    {
+        display: none;
+    }
+
+    .navbar li
+    {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .navbar li:last-child
+    {
+        margin-bottom: 0;
+    }
+
+    .welcomeContent
+    {
+        margin: 0;
+    }
+
+    .welcomeTxtWrapper h1
+    {
+        font-size: 6vh;
+        text-align: center;
+    }
+
+    .projectCard
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentWrapper, .cardsWrapper li:nth-child(odd) .contentWrapper
+    {
+        border-radius: 0 0 40px 40px;
+        align-items: center;
+    }
+
+    .projectDescription, .cardsWrapper li:nth-child(odd) .projectDescription
+    {
+        text-align: center;
+    }
+
+    .imgContainer img
+    {
+        border-radius: 40px 40px 0 0;
+    }
+
+    .iconsWrapper
+    {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .source
+    {
+        order: 2;
+    }
+
+    .toolsIcons
+    {
+        margin: 0;
+    }
+
+    .cardsWrapper li:nth-child(odd) .toolsIcons
+    {
+        margin: 0;
+        order: 1;
+    }
+
+    .cardsWrapper li:nth-child(odd) .source
+    {
+        margin: 0;
+    }
+
+    .aboutWrapper
+    {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .imgBG
+    {
+        display: none;
+    }
+
+    .aboutImgContainer
+    {
+        width: 100%;
+    }
+
+    .aboutImgWrapper
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutImg
+    {
+        margin: 0;
+    }
+
+    .aboutContent
+    {
+        padding: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .aboutContent p
+    {
+        text-align: center;
+    }
+
+    .skillsContainer
+    {
+        gap: 10px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .skillsContainer li
+    {
+        min-width: 145px;
+    }
+
+    .contactWrapper
+    {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contactForm
+    {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contactForm textArea, input
+    {
+       width: 100%;
+       box-sizing: border-box;
+    }
+
+    .contactForm input
+    {
+        margin-bottom: 0;
+    }
+
+    .formContainer
+    {
+        width: 100%;
+    }
+
+    .contactInfo
+    {
+        width: 100%;
+        padding: 0;
+
+        align-items: center;
+    }
+
+    .contact
+    {
+        margin-bottom: 0;
+    }
+
+    .lastMessage
+    {
+        margin-bottom: 100px;
+    }
+
+    .footer
+    {
+        height: auto;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px)
+{
+    .navbar
+    {
+        position: fixed;
+        height: 50px;
+    }
+
+    .navbar li
+    {
+        display: inline-flex;
+        margin-bottom: 0;
+    }
+
+    .navbar li:nth-child(1)
+    {
+        display: inline-flex;
+    }
+
+    .container, .nav-container
+    {
+        max-width: calc(100% - 100px);
+    }
+
+    .welcomeContent
+    {
+        margin-top: 50px;
+    }
+
+    .welcomeTxtWrapper h1
+    {
+        font-size: 8vh;
+    }
+
+    .welcomeBtns
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcomeBtns a:nth-child(2)
+    {
+        display: none;
+    }
+
+    .skillsContainer
+    {
+        gap: 40px;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .contactWrapper
+    {
+        flex-direction: row;
+    }
+
+    .formContainer
+    {
+        width: 65%;
+    }
+
+    .contactInfo
+    {
+        width: 35%;
+        font-size: 28px;
+        margin-left: 15px;
+    }
+
+    .contactInfo ul
+    {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactInfo li
+    {
+        flex-direction: column;
+        gap: 15px;
+
+        font-size: 40px;
+    }
+
+    .contactInfo a
+    {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+}
