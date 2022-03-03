@@ -41,6 +41,7 @@
     {
         display: block;
         margin-bottom: 15px;
+        margin-left: 0;
     }
     .navbar li:last-child
     {
@@ -114,6 +115,8 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+
+        gap: 15px;
     }
 
     .imgBG
@@ -164,13 +167,13 @@
     .contactWrapper
     {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
     }
 
     .contactForm
     {
         width: 100%;
-        padding: 20px;
+        padding: 25px;
     }
 
     .contactForm textArea, input
@@ -226,6 +229,7 @@
     {
         display: inline-flex;
         margin-bottom: 0;
+        margin-left: 30px;
     }
 
     .navbar li:nth-child(1)

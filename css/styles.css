@@ -820,11 +820,24 @@ body h4
 
     width: 100vw;
 
-    background-image: url("../images/vnBG.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
     overflow: hidden;
+}
+
+.vnBG
+{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+
+    z-index: 1;
+}
+
+.vnBG img
+{
+    width: 100%;
+
+    border-radius: 0;
 }
 
 .dialogueImgContainer
@@ -846,6 +859,7 @@ body h4
 .dialogueContainer
 {
     justify-self: center;
+    align-self: center;
     z-index: 2;
 
     grid-column-start: 1;
@@ -1093,10 +1107,8 @@ body h4
     align-items: center;
     flex-direction: column;
     height: 85px;
-
     text-align: center;
-
-/*    line-height: 1.8;*/
+    padding: 15px;
 }
 
 .footer a

@@ -304,7 +304,7 @@ function changeVNPosition()
 {
     if(window.innerWidth > 1920)
     {
-        document.getElementById("dialogueContainer").style.marginTop = "600px";
+        document.getElementById("dialogueContainer").style.marginTop = "250px";
         document.getElementById("userInteractionWrapper").style.marginTop = "250px";
         document.getElementById("closeVN").style.marginTop = "250px";
         document.getElementById("closeVN").style.marginRight = "500px";
@@ -312,7 +312,7 @@ function changeVNPosition()
         document.getElementById("spriteImgContainer").style.marginBottom = "450px";
     } else
     {
-        document.getElementById("dialogueContainer").style.marginTop = "450px";
+        document.getElementById("dialogueContainer").style.marginTop = "300px";
         document.getElementById("userInteractionWrapper").style.marginTop = "80px";
         document.getElementById("closeVN").style.marginTop = "80px";
         document.getElementById("closeVN").style.marginRight = "300px";
