@@ -232,6 +232,7 @@ function nextSentence()
                 if (sentenceIndex === 11)
                 {
                     askName = true;
+                    enterBtnClicked();
                 }else if (sentenceIndex === 12)
                 {
                     sentences[sentenceIndex] = "-roman+" + username + sentences[sentenceIndex];
@@ -321,5 +322,21 @@ function changeVNPosition()
     }
 }
 
+function enterBtnClicked()
+{
+    const nameInput = document.getElementById("username");
+
+    if(nameInput != null)
+    {
+        nameInput.addEventListener("keyup", function (event)
+        {
+            if (event.keyCode === 13)
+            {
+                event.preventDefault();
+                document.getElementById("acceptBtn").click();
+            }
+        });
+    }
+}
 
 /*Novel functions ends here*/

@@ -369,7 +369,7 @@ body h4
 .contactForm textArea
 {
     width: 520px;
-    height: 150px;
+    min-height: 110px;
 
     resize: none;
 }
@@ -510,6 +510,18 @@ body h4
     -ms-user-select: none;
     user-select: none;
 }
+
+.swipeContainer
+{
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 15px;
+    font-size: 45px;
+    gap: 15px;
+}
+
 
 /*Skills Styles Ends Here*/
 
@@ -1070,6 +1082,8 @@ body h4
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
+
+    z-index: 2;
 }
 
 .scrollIconWrapper i

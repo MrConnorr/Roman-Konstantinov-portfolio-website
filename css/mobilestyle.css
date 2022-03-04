@@ -164,6 +164,11 @@
         min-width: 145px;
     }
 
+    .swipeContainer
+    {
+        display: flex;
+    }
+
     .contactWrapper
     {
         flex-direction: column;
@@ -180,6 +185,11 @@
     {
        width: 100%;
        box-sizing: border-box;
+    }
+
+    .contactForm textArea
+    {
+        min-height: 190px;
     }
 
     .contactForm input
@@ -270,6 +280,11 @@
         flex-wrap: wrap;
 
         justify-content: center;
+    }
+
+    .swipeContainer
+    {
+        display: none;
     }
 
     .contactWrapper

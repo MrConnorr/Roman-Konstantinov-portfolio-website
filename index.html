@@ -73,11 +73,11 @@
                         <a onclick="userInteraction(false, 1)" class="answerBtn secondaryBtn">No, I am new here.</a>
                         <a onclick="userInteraction(false, 2)" class="answerBtn secondaryBtn">I think we have met back on Earth after the health examination.</a>
                     </div>
-                    <form id="namePromptForm" class="namePromptForm">
+                    <div id="namePromptForm" class="namePromptForm">
                         <label for="username">Enter your name:</label>
                         <input type="text" id="username" value="" />
-                        <a onclick="userInteraction(true)" class="acceptBtn mainBtn">Confirm</a>
-                    </form>
+                        <a onclick="userInteraction(true)" id="acceptBtn" class="acceptBtn mainBtn">Confirm</a>
+                    </div>
 
                     <div id="finalChoice" class="finalChoice">
                         <a class="secondaryBtn" href="#projects">Visit projects section</a>
@@ -163,7 +163,7 @@
                             <h4>My Portfolio website</h4>
                             <p class="projectDescription">
                                 This portfolio website that I built myself from scratch including a small visual novel built into website.
-                                If you skipped visual novel and want to check it out, just go to <a href="#home">Home</a> and click "Begin Exploration" button.
+                                If you skipped visual novel and want to check it out, just go to <a href="#home">Home</a> and click "Begin Exploration" button (If on Desktop).
                             </p>
                             <div class="iconsWrapper">
                                 <div class="source mainBtn">
@@ -262,6 +262,9 @@
                 <li><img src="images/icons/mobile.svg" alt="Mobile development icon" /><a>Mobile development</a></li>
                 <li><img src="images/icons/intellij.svg" alt="Intellij Idea icon" /><a>Intellij Idea</a></li>
             </ul>
+            <div class="swipeContainer">
+                <span class="iconify" data-icon="ic:outline-swipe"></span><h4>Swipe</h4>
+            </div>
         </div>
     </div>
 
@@ -306,6 +309,20 @@
         ScrollReveal().reveal('.experience', {delay: 150});
         ScrollReveal().reveal('.about', {delay: 150});
         ScrollReveal().reveal('.contact', {delay: 150});
+
+        const textArea = document.getElementsByTagName("textarea");
+        for (let i = 0; i < textArea.length; i++)
+        {
+            textArea[i].setAttribute("style", "height:" + (textArea[i].scrollHeight) + "px;overflow-y:hidden;");
+            textArea[i].addEventListener("input", OnInput, false);
+        }
+
+        function OnInput()
+        {
+            this.style.height = "110px";
+            this.style.height = (this.scrollHeight) + "px";
+        }
+
     </script>
 
 </div>
