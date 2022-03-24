@@ -50,6 +50,8 @@
 
     .welcomeContent
     {
+        display: flex;
+
         margin: 0;
     }
 
@@ -224,7 +226,6 @@
     {
         height: auto;
     }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px)
@@ -254,6 +255,8 @@
 
     .welcomeContent
     {
+        display: flex;
+
         margin-top: 50px;
     }
 

@@ -7,6 +7,7 @@ let askAnswer = false;
 let username = "Visitor";
 let printingTimer;
 let pausePrinting = false;
+let isVNOpen = false;
 
 const sentences = ["Before you start your adventure, a few helpful tips:<br>To continue dialogue, click anywhere on this box when you see this icon",
 "If you don’t want to see how the text is typing, just click anywhere on this box.",
@@ -125,6 +126,8 @@ function startCloseVN(hideElement, isFirstLaunch = false, isCloseVN = false)
 
     if (isFirstLaunch)
     {
+        isVNOpen = true;
+
         setTimeout(function()
         {
             elementsToHide.style.display = "none";
@@ -139,12 +142,16 @@ function startCloseVN(hideElement, isFirstLaunch = false, isCloseVN = false)
         },2500);
     } else if(isCloseVN)
     {
+        isVNOpen = false;
+
         showElement = "starterContent";
         elementDisplayStyle = "flex";
         bgDisplayStyle = "block";
         document.getElementById("startVNbtn").onclick = function() {closeVN();};
     } else
     {
+        isVNOpen = true;
+
         showElement = "dialogueWrapper";
         elementDisplayStyle = "grid";
         bgDisplayStyle = "none";

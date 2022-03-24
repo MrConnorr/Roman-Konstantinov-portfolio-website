@@ -2,6 +2,7 @@ window.onresize = function ()
 {
     changeNavbar();
     changeVNPosition();
+    hideVNOnResize();
 }
 
 window.onscroll = function()
@@ -33,6 +34,19 @@ function changeNavbar()
     } else
     {
         navbar.classList.remove("navScroll");
+    }
+}
+
+function hideVNOnResize()
+{
+    if(isVNOpen && window.innerWidth <= 1199)
+    {
+        document.getElementById("dialogueWrapper").style.display = "none";
+        document.getElementById("starterContent").style.display = "flex";
+    } else if(isVNOpen)
+    {
+        document.getElementById("dialogueWrapper").style.display = "grid";
+        document.getElementById("starterContent").style.display = "none";
     }
 }
 

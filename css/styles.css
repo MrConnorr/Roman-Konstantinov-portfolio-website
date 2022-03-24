@@ -545,6 +545,24 @@ body h4
     gap: 15px;
 }
 
+.aboutContent ul
+{
+    text-align: left;
+    padding-left: 15px;
+}
+
+.aboutContent li
+{
+    color: #EFE6F0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.aboutContent li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+
 .aboutContent h3
 {
     font-size: 22px;
