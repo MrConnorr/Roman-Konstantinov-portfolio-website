@@ -124,10 +124,10 @@ function startCloseVN(hideElement, isFirstLaunch = false, isCloseVN = false)
     let elementDisplayStyle = "grid";
     elementsToHide.classList.add("fadeOut");
 
+    isVNOpen = true;
+
     if (isFirstLaunch)
     {
-        isVNOpen = true;
-
         setTimeout(function()
         {
             elementsToHide.style.display = "none";
@@ -150,8 +150,6 @@ function startCloseVN(hideElement, isFirstLaunch = false, isCloseVN = false)
         document.getElementById("startVNbtn").onclick = function() {closeVN();};
     } else
     {
-        isVNOpen = true;
-
         showElement = "dialogueWrapper";
         elementDisplayStyle = "grid";
         bgDisplayStyle = "none";

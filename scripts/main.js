@@ -42,6 +42,7 @@ function hideVNOnResize()
     if(isVNOpen && window.innerWidth <= 1199)
     {
         document.getElementById("dialogueWrapper").style.display = "none";
+        document.getElementById("starterContent").classList.remove("fadeOut");
         document.getElementById("starterContent").style.display = "flex";
     } else if(isVNOpen)
     {
