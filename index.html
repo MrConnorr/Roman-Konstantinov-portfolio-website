@@ -46,7 +46,7 @@
                 <div class="starterContent">
                     <div class="welcomeTxtWrapper">
                         <h1 id="welcomeHeader">Let's code something fun!</h1>
-                        <h2>Welcome to Roman’s developer portfolio showcasing projects from the Software and Game Development fields.</h2>
+                        <h2>Welcome to Roman’s developer portfolio showcasing projects from the Web and Game Development fields.</h2>
                     </div>
 
                     <div class="welcomeBtns">
@@ -119,46 +119,48 @@
 
                     <li class="projectCard">
                         <div class="imgContainer">
-                            <img alt="Shelter project cover" src="images/shelterCover.png" />
+                            <img alt="MyWatchlist web cover" src="https://cdn.discordapp.com/attachments/481861155724197890/1064269822503960689/mywatchlist_web.png" />
                         </div>
                         <div class="contentWrapper">
-                            <h4>Shelter</h4>
+                            <h4>MyWatchlist website</h4>
                             <p class="projectDescription">
-                                My first cross-platform multiplayer project built from scratch.
-                                A video game version of tabletop game "Shelter". It is a multiplayer game, mainly for Android and iOS made on Unreal Engine and using Unreal Engine dedicated server.
+                                MyWatchlist - is a movie and series selection website, where user can see what is popular right now, manage their watchlist, rate movies/series, see actors biography and filmography, write comments and more.
+                                MyWatchlist uses two REST APIs, TMDB API - which covers all movie, series and actors info and <a href="#mywatchlistapi">MyWatchlist API</a> - which covers whole user interaction with the website.
                             </p>
                             <div class="iconsWrapper">
                                 <div class="source mainBtn">
-                                    <a href="https://github.com/MrConnorr/Shelter-UE4" target="_blank">GitHub <span class="iconify" data-icon="codicon:github-alt"></span></a>
+                                    <a href="https://github.com/MrConnorr/mywatchlist-web" target="_blank">GitHub <span class="iconify" data-icon="codicon:github-alt"></span></a>
                                 </div>
                                 <ul class="toolsIcons">
-                                    <li>Unreal Engine</li>
-                                    <li>UE dedicated server</li>
-                                    <li>Cross-platform development</li>
+                                    <li>React</li>
+                                    <li>JavaScript</li>
+                                    <li>CSS</li>
+                                    <li>API</li>
                                 </ul>
                             </div>
                         </div>
                     </li>
 
-                    <li class="projectCard">
+                    <li class="projectCard" id="mywatchlistapi">
                         <div class="imgContainer">
-                            <img alt="Snake project cover" src="images/snakeCover.png" />
+                            <img alt="MyWatchlist api cover" src="https://cdn.discordapp.com/attachments/481861155724197890/1064273531938025634/mywatchlist_api.png" />
                         </div>
                         <div class="contentWrapper">
-                            <h4>Snake</h4>
+                            <h4>MyWatchlist REST API</h4>
                             <p class="projectDescription">
-                                A small fun project built on Unreal Engine where you play a classic snake game, but you are competing against an AI.
-                                AI uses Unreal Engine behaviour tree and EQS(Environment Query System). It is a Top-Down 3D snake game.
+                                MyWatchlist API - is a REST API that uses node.js, express.js, utilizing mongoDB, SMTP and JSON Web token. It allows users to sign up and login to their account,
+                                add movies or series to their watchlist, rate movies/series, write comments for movie, series or actors. For user to create an account, their firstly need to confirm their email as well as user can recover their password.
                             </p>
                             <div class="iconsWrapper">
                                 <div class="source mainBtn">
-                                    <a href="https://github.com/MrConnorr/SnakeUE4" target="_blank">GitHub <span class="iconify" data-icon="codicon:github-alt"></span></a>
+                                    <a href="https://github.com/MrConnorr/mywatchlist-api" target="_blank">GitHub <span class="iconify" data-icon="codicon:github-alt"></span></a>
                                 </div>
                                 <ul class="toolsIcons">
-                                    <li>Unreal Engine</li>
-                                    <li>UE behaviour tree</li>
-                                    <li>UE EQS</li>
-                                    <li>PC development</li>
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>MongoDB</li>
+                                    <li>SMTP</li>
+                                    <li>JSON Web Token</li>
                                 </ul>
                             </div>
                         </div>
@@ -212,6 +214,52 @@
                         </div>
                     </li>
 
+                    <li class="projectCard">
+                        <div class="imgContainer">
+                            <img alt="Shelter project cover" src="images/shelterCover.png" />
+                        </div>
+                        <div class="contentWrapper">
+                            <h4>Shelter</h4>
+                            <p class="projectDescription">
+                                My first cross-platform multiplayer project built from scratch.
+                                A video game version of tabletop game "Shelter". It is a multiplayer game, mainly for Android and iOS made on Unreal Engine and using Unreal Engine dedicated server.
+                            </p>
+                            <div class="iconsWrapper">
+                                <div class="source mainBtn">
+                                    <a href="https://github.com/MrConnorr/Shelter-UE4" target="_blank">GitHub <span class="iconify" data-icon="codicon:github-alt"></span></a>
+                                </div>
+                                <ul class="toolsIcons">
+                                    <li>Unreal Engine</li>
+                                    <li>UE dedicated server</li>
+                                    <li>Cross-platform development</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+<!--                    <li class="projectCard">
+                        <div class="imgContainer">
+                            <img alt="Snake project cover" src="images/snakeCover.png" />
+                        </div>
+                        <div class="contentWrapper">
+                            <h4>Snake</h4>
+                            <p class="projectDescription">
+                                A small fun project built on Unreal Engine where you play a classic snake game, but you are competing against an AI.
+                                AI uses Unreal Engine behaviour tree and EQS(Environment Query System). It is a Top-Down 3D snake game.
+                            </p>
+                            <div class="iconsWrapper">
+                                <div class="source mainBtn">
+                                    <a href="https://github.com/MrConnorr/SnakeUE4" target="_blank">GitHub <span class="iconify" data-icon="codicon:github-alt"></span></a>
+                                </div>
+                                <ul class="toolsIcons">
+                                    <li>Unreal Engine</li>
+                                    <li>UE behaviour tree</li>
+                                    <li>UE EQS</li>
+                                    <li>PC development</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>-->
                 </ul>
         </div>
     </div>
@@ -231,23 +279,25 @@
                     </div>
                 </div>
                 <div class="aboutContent">
-                    <h3>Hi! My name is Roman Konstantinov.</h3>
-                    <p>I am a hardworking, aspiring Software Developer and a proud cat owner. Currently, studying at HAMK University in Finland.
-                    While studying, improving my coding skills, learning more about game development and doing some fun small projects as practice.
-                    When I have a free time, I usually play video games, mostly singleplayer games but currently playing Apex Legends as well as
-                    watching anime, tv series or movies and sometimes reading manga.</p>
+                    <h3>Hey👋, my name is Roman Konstantinov.</h3>
+                    <p>
+                    I am an aspiring Web Developer and a proud owner of two cats.
+                    Currently, I'm in my third year of studies towards a bachelor's in Computer Applications at HAMK University.
+                    Aside of my studies, I am improving my coding skills by doing personal projects and as a hobby learning more about game development.
 
-                    <p>Except studying, I already acquired some working experience in software development field, to be more precisely in video game development and working with game engines.
-                    I have been going through internships in Javelin OÜ, Limestone Games OÜ and HAMK Smart as well as I was working at HAMK Smart in summer of 2021.
+                    Whenever, I got free time, I am usually watching different types of media entertainment from movies to anime or play some video games with my friends.
+
+                    Thanks to my previous studies as well as studying in HAMK I have got working experience in software development field.
+                    I have completed several internships in different companies:
                         <ul>
-                            <li>At Javelin OÜ I was working on mobile video game <a href="https://play.google.com/store/apps/details?id=com.stickman.multiplayer.shooter" target="_blank">Stickman Combats</a>. The game built on Actionscript 3.0 using different frameworks as well as custom ones. I was working on new game features, building maps, UI, solving bugs and testing the game.</li>
-                            <li>At Limestone Games OÜ I was working on a personal project which is Snake video game with AI in Unreal Engine that uses Unreal Engine behaviour tree and experimental EQS</li>
-                            <li>At HAMK Smart I was working on Asemanranta project built on Unreal Engine where I was developing various features like real-time weather system + particles, in-game on level time changing as well as by user and getting real world time. I was using different APIs and plugins for Unreal Engine.</li>
+                            <li>At Javelin OÜ, I was working on mobile video game <a href="https://play.google.com/store/apps/details?id=com.stickman.multiplayer.shooter" target="_blank">Stickman Combats</a>. The game written on Actionscript 3.0 and uses various frameworks and a custom one. There, I was working on new game features, creating new maps, coding UI, bug finding and solving.</li>
+                            <li>At Limestone Games OÜ, I was working on a personal project which was a top-down 3D Snake with AI in Unreal Engine that uses Unreal Engine behaviour tree and experimental (at that time) EQS (Environment Query System).</li>
+                            <li>At HAMK Smart, firstly I was an intern but then got summer job offer. Here, I was working on Asemanranta project built on Unreal Engine where I was developing various features like real-time weather system, various weather particles, real world time on in-game level which changes level lightning and sun position as in real-life, also user is able to change time manually through developed clock UI. I was utilizing different APIs and plugins for Unreal Engine.</li>
                         </ul>
                     </p>
 
                     <div class="moreAbout">
-                        More about me <span class="iconify" data-icon="akar-icons:arrow-right"></span>
+                        <span>More about me</span> <span class="iconify" data-icon="akar-icons:arrow-right"></span>
                         <a href="https://www.linkedin.com/in/konstantinov-roman/" target="_blank"><span class="iconify" data-icon="simple-line-icons:social-linkedin"></span></a>
                         <a href="https://github.com/MrConnorr" target="_blank"><span class="iconify" data-icon="codicon:github-alt"></span></a>
                     </div>
@@ -263,16 +313,16 @@
             <ul class="skillsContainer">
                 <li><img src="images/icons/html5.svg"  alt="HTML5 icon"/><a>HTML5</a></li>
                 <li><img src="images/icons/css.svg" alt="CSS icon" /><a>CSS</a></li>
-                <li><img src="images/icons/javascript.svg" alt="JavaScript icon" /><a>JavaScript</a></li>
+                <li><img src="images/icons/js.svg" alt="JavaScript icon" /><a>JavaScript</a></li>
+                <li><img src="images/icons/react.svg" alt="React icon" /><a>React</a></li>
                 <li><img src="images/icons/mysql.svg" alt="MySQL icon" /><a>MySQL</a></li>
+                <li><img src="images/icons/mongodb.svg" alt="Actionscript icon" /><a>MongoDB</a></li>
+                <li><img src="images/icons/node.svg" alt="Actionscript icon" /><a>Node.js</a></li>
+                <li><img src="images/icons/express.svg" alt="Actionscript icon" /><a>Express.js</a></li>
+                <li><img src="images/icons/api.svg" alt="Actionscript icon" /><a>REST API development</a></li>
                 <li><img src="images/icons/git.svg"  alt="Git icon"/><a>Git</a></li>
                 <li><img src="images/icons/unreal.svg" alt="Unreal Engine icon" /><a>Unreal Engine</a></li>
-                <li><img src="images/icons/actionscript.svg" alt="Actionscript icon" /><a>Actionscript</a></li>
-                <li><img src="images/icons/react.svg" alt="React icon" /><a>React</a></li>
-                <li><img src="images/icons/gamedev.svg" alt="Game development icon" /><a>Game development</a></li>
-                <li><img src="images/icons/pc.svg" alt="PC development icon" /><a>PC development</a></li>
-                <li><img src="images/icons/mobile.svg" alt="Mobile development icon" /><a>Mobile development</a></li>
-                <li><img src="images/icons/intellij.svg" alt="Intellij Idea icon" /><a>Intellij Idea</a></li>
+                <li><img src="images/icons/gamedev.svg" alt="Game development icon" /><a>Multi-platform development</a></li>
             </ul>
             <div class="swipeContainer">
                 <span class="iconify" data-icon="ic:outline-swipe"></span><h4>Swipe</h4>
@@ -342,7 +392,7 @@
     <div class="container">
         <footer class="footer">
             <p>Layout by Roman Konstantinov, website design by <a href="https://www.kotanna.com/" target="_blank"> Anna Kot.</a></p>
-                © 2022 Roman Konstantinov. All rights reserved.
+                © 2023 Roman Konstantinov. All rights reserved.
         </footer>
     </div>
 
