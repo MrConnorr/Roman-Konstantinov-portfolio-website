@@ -91,7 +91,7 @@
         align-items: center;
     }
 
-    .source
+    .source, .project_btns
     {
         order: 2;
     }
@@ -107,7 +107,7 @@
         order: 1;
     }
 
-    .cardsWrapper li:nth-child(odd) .source
+    .cardsWrapper li:nth-child(odd) .source, .project_btns
     {
         margin: 0;
     }

@@ -245,7 +245,7 @@ body h4
     width: 100%;
 }
 
-.source
+.source, .preview
 {
     display: flex;
     justify-content: center;
@@ -257,14 +257,32 @@ body h4
     font-weight: 500;
 }
 
-.source a
+.source a, .preview a
 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    color: white;
+    color: #fff;
     text-decoration: none;
+}
+
+.preview
+{
+    border-color: #000 !important;
+}
+
+.preview a
+{
+    color: #000;
+}
+
+.project_btns
+{
+    display: flex;
+    margin-left: auto;
+    order: 2;
+    gap: 10px;
 }
 
 .toolsIcons
